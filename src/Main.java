@@ -64,8 +64,9 @@ public class Main {
         int n = in.nextInt();
         in.nextLine();
         return n;
-      } catch (NumberFormatException e) {
+      } catch (java.util.InputMismatchException e) {
         System.err.printf("not a number%n");
+        in.nextLine();
       }
     }
   }
