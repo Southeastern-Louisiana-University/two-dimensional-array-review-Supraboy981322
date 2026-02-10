@@ -1,3 +1,5 @@
+Imagine using an IDE. Couldn't be me. (at least NeoVim doesn't randomly break when it updates)
+
 # Two Dimensional Array practice
 Key Point Nested for loops are often used to process a two-dimensional array. Suppose an array matrix is created as follows: int[][] matrix = new int[10][10];
 The following are some examples of processing two-dimensional arrays. 
