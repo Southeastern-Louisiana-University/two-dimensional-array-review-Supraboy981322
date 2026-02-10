@@ -29,6 +29,9 @@ public class Main {
   static int[][] user_populate(int[][] mat, Scanner in) {
     for (int i = 0; i < mat.length; i++) {
       for (int j = 0; j < mat[0].length; j++) {
+        System.out.printf(
+          "    please enter number %d of %d (row %d)", j, mat[j].length, i
+        );
         mat[i][j] = user_int(in);
       }
     }
@@ -65,7 +68,7 @@ public class Main {
         in.nextLine();
         return n;
       } catch (java.util.InputMismatchException e) {
-        System.err.printf("not a number%n");
+        System.err.printf("not a number (or too large)%n");
         in.nextLine();
       }
     }
